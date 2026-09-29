@@ -29,9 +29,9 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-
+  
       - name: 의존성 설치
-        run: npm ci
+  run: npm install --legacy-peer-deps
 
       - name: 프로젝트 빌드 (Vite Build)
         run: npm run build
